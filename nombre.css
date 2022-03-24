@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* importer une police sur googlefonts sélectionner le lien et copier venir le coller tout en haut du CSS */
+:root{
+    --title: #f8c27a;
+    --textShadow: 0 2px 2px rgba(0,0,0,.7);
+    /* faire une ombre pour le text avec de l'opacité */
+    --boxtShadow: 0 0 10px rgba(0,0,0,.2);
+    /* faire une ombre pour les boites avec de l'opacité */
+}
+*{
+    /* signifie reset pour désigner que tous les éléments non pas les valeurs suivantes  */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    /* donner une police général de 14px */
+    width: 100vw;
+    /* définir sur toute la largeur de l'écran visible */
+    overflow: hidden;
+    /* éviter les problèmes de scroll  */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    /* Récupérer un gradient sur webgradient (background-image) */
+}
+.nombre{
+    background-color: rgba(255,255,255,.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: var(--boxtShadow);
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    /* récupérer la police "LUCKIEST GUY" sur googlefonts */
+    margin-bottom: 15px;
+    color: #ffc31d;
+    text-shadow: var(--boxtShadow);
+    display: inline-block;
+}
+.vies{
+    margin: 10px;
+}
+ion-icon{
+    font-size: 50px;
+    /* pour changer la taille des icones  */
+    fill: red;
+    /* pour changer la couleur des icones */
+}
+#saisie{
+    background-color: #96e6a1;
+    padding: 15px;
+    border-radius: 5px;
+}
+#saisie > label{
+    /* je vise le label qui est à l'intérieur de mon formulaire  */
+    display: block;
+    margin-bottom: 8px;
+}
+input,
+button{
+    /* leurs donner un style pour éviter de répéter */
+    outline: none;
+    bottom: none;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+button{
+    background-color: teal;
+    color: #ffff;
+    cursor: pointer;
+    /* quand on passe la souris par dessus il y aura la main qui apparait */
+    transition: all 0.2s;
+}
+button:hover{
+    transform: translateY(-2px);
+    background-color: rgb(33, 184, 184);
+}
+p#message{
+    margin: 20px auto 0 auto;
+}
+#rejouer{
+    display: none;
+    margin: 5px auto 0 auto;
+}
+#details{
+    font-weight: bold;
+    /* mettre en gras */
+    font-style: 6px;
+    margin-top: 5px;
+}
